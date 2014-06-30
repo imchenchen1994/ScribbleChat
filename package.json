@@ -1,0 +1,38 @@
+{
+  "name": "ScribbleChat",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "connect-flash": "~0.1.1",
+    "debug": "0.7.4",
+    "ejs": "~0.8.5",
+    "engine.io": "1.3.1",
+    "express": "~3.4.4",
+    "has-binary-data": "0.1.1",
+    "mongoose": "~3.8.12",
+    "passport": "~0.1.17",
+    "passport-facebook": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "passport-local": "~0.1.6",
+    "passport-twitter": "~1.0.2",
+    "socket.io": "^1.0.6",
+    "socket.io-adapter": "0.2.0",
+    "socket.io-client": "Automattic/socket.io-client#05c9632",
+    "socket.io-parser": "2.2.1"
+  },
+  "scripts": {
+    "test": "make test",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "mocha": "1.16.2",
+    "expect.js": "0.3.1",
+    "supertest": "0.8.2",
+    "superagent": "0.17.0",
+    "istanbul": "0.2.3"
+  },
+  "description": "Code for the entire scotch.io tutorial series: Complete Guide to Node Authentication",
+  "version": "0.0.0",
+  "author": "Lareina Ting & Chen Tze Cheng",
+  "license": "ISC"
+}
