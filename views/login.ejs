@@ -1,0 +1,58 @@
+<!-- views/login.ejs -->
+<!doctype html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+    <title>ScribleChat</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+
+    <link type = "text/css" rel = "stylesheet" href = "style.css"/>
+
+  <style type="text/css"></style></head>
+
+<body>
+<div class="container">
+
+<div class="col-sm-6 col-sm-offset-3">
+
+	<h1><span class="fa fa-sign-in"></span> Login</h1>
+
+	<!-- show any messages that come back with authentication -->
+	<% if (message.length > 0) { %>
+		<div class="alert alert-danger"><%= message %></div>
+	<% } %>
+
+	<!-- LOGIN FORM -->
+	<form action="/login" method="post">
+        <div align="Middle"><img src="http://i59.tinypic.com/214mxk.jpg" border="0" alt="Image and video hosting by TinyPic" ></div>
+        <h2 class="form-signin-heading" align="Middle">Welcome</h2>
+			<input type="text" class="form-control" name="email" placeholder = "Email address">
+		
+		<div class="form-group">
+			<input type="password" class="form-control" name="password" placeholder = "Password">
+		</div>
+		<div align="Middle">
+		<button type="submit" class="btn btn-warning btn-lg" >Login</button>
+		</div>
+	</form>
+
+	<hr>
+
+	<p>Need an account? <a href="/signup">Signup</a></p>
+	<p>Or go <a href="/">home</a>.</p>
+
+</div>
+
+</div>
+</body>
+</html>
